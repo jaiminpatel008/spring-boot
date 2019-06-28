@@ -275,6 +275,12 @@ server.undertow.io-threads= # Number of I/O threads to create for the worker. Th
 server.undertow.max-http-post-size=-1B # Maximum size of the HTTP post content. When the value is -1, the default, the size is unlimited.
 server.undertow.worker-threads= # Number of worker threads. The default is 8 times the number of I/O threads.
 
+#Spring Boot Random Server Port
+Either set server.port as system property using command line option to jvm -Dserver.port=8090 or add application.properties in /src/main/resources/ with
+server.port = 8090
+#For random port use
+server.port=0
+
 # FREEMARKER (FreeMarkerProperties)
 spring.freemarker.allow-request-override=false # Whether HttpServletRequest attributes are allowed to override (hide) controller generated model attributes of the same name.
 spring.freemarker.allow-session-override=false # Whether HttpSession attributes are allowed to override (hide) controller generated model attributes of the same name.
