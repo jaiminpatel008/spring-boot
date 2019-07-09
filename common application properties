@@ -5,7 +5,6 @@
 # entirety to your own application.               ^^^
 # ===================================================================
 
-
 # ----------------------------------------
 # CORE PROPERTIES
 # ----------------------------------------
@@ -513,7 +512,6 @@ spring.webservices.servlet.init= # Servlet init parameters to pass to Spring Web
 spring.webservices.servlet.load-on-startup=-1 # Load on startup priority of the Spring Web Services servlet.
 spring.webservices.wsdl-locations= # Comma-separated list of locations of WSDLs and accompanying XSDs to be exposed as beans.
 
-
 # ----------------------------------------
 # SECURITY PROPERTIES
 # ----------------------------------------
@@ -530,7 +528,7 @@ spring.security.oauth2.client.registration.*= # OAuth client registrations.
 
 # SECURITY OAUTH2 RESOURCE SERVER (OAuth2ResourceServerProperties)
 spring.security.oauth2.resourceserver.jwt.jwk-set-uri= # JSON Web Key URI to use to verify the JWT token.
-   spring.security.oauth2.resourceserver.jwt.issuer-uri= # URI that an OpenID Connect Provider asserts as its Issuer Identifier.
+spring.security.oauth2.resourceserver.jwt.issuer-uri= # URI that an OpenID Connect Provider asserts as its Issuer Identifier.
 
 # ----------------------------------------
 # DATA PROPERTIES
@@ -744,8 +742,8 @@ spring.elasticsearch.jest.username= # Login username.
 
 # Elasticsearch REST clients (RestClientProperties)
 spring.elasticsearch.rest.password= # Credentials password.
-   spring.elasticsearch.rest.uris=http://localhost:9200 # Comma-separated list of the Elasticsearch instances to use.
-   spring.elasticsearch.rest.username= # Credentials username.
+spring.elasticsearch.rest.uris=http://localhost:9200 # Comma-separated list of the Elasticsearch instances to use.
+spring.elasticsearch.rest.username= # Credentials username.
 
 # H2 Web Console (H2ConsoleProperties)
 spring.h2.console.enabled=false # Whether to enable the console.
@@ -1176,7 +1174,6 @@ spring.rabbitmq.template.routing-key= # Value of a default routing key to use fo
 spring.rabbitmq.username=guest # Login user to authenticate to the broker.
 spring.rabbitmq.virtual-host= # Virtual host to use when connecting to the broker.
 
-
 # ----------------------------------------
 # ACTUATOR PROPERTIES
 # ----------------------------------------
@@ -1558,7 +1555,6 @@ spring.devtools.remote.proxy.port= # The port of the proxy to use to connect to 
 spring.devtools.remote.restart.enabled=true # Whether to enable remote restart.
 spring.devtools.remote.secret= # A shared secret required to establish a connection (required to enable remote support).
 spring.devtools.remote.secret-header-name=X-AUTH-TOKEN # HTTP header used to transfer the shared secret.
-
 
 # ----------------------------------------
 # TESTING PROPERTIES
