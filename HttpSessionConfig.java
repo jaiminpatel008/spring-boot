@@ -1,4 +1,3 @@
-
 package com.croods.cityicon.config;
 
 import org.springframework.context.annotation.Bean;
@@ -7,8 +6,6 @@ import javax.servlet.http.HttpSessionAttributeListener;
 import javax.servlet.http.HttpSessionBindingEvent;
 import javax.servlet.http.HttpSessionEvent;
 import javax.servlet.http.HttpSessionListener;
-
-
 
 /**
  * Created by JavaDeveloperZone on 13-11-2017.
